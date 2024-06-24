@@ -52,10 +52,10 @@ def game():
 
         else:
             print("Неправильный номер")
-    if (step == 10):
+    if (step == 10 and not victory_condition()):
         print("Ничья!")
-
-    print("Победил " + victory_condition() + "!")
+    else:
+        print("Победил " + victory_condition() + "!")
 
 
 
